@@ -321,8 +321,7 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [function ({ addComponents }) {
-    // 一些自定义的样式
+  plugins: [function ({ addComponents }) { 
     addComponents({
       '.custom-button-1': {
         display: 'inline-block',

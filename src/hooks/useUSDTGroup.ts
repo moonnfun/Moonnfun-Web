@@ -20,10 +20,7 @@ export default function useUSDTGroup(
   const [TOKENBalance, setTOKENBalance] = useState("0");
   const [TOKENAllowance, setTOKENAllowance] = useState("0");
   const [symbol, setSymbol] = useState("");
-
-  /**
-   *  TOKENBalance 余额
-   */
+ 
   const initTOKENBalance = useCallback(async () => {
     if (!!account) {
       const balance = await Contracts.example?.balanceOf(account, coinName);
@@ -31,10 +28,7 @@ export default function useUSDTGroup(
       setTOKENBalance(decimalNum(Web3.utils.fromWei(balance.toString()), 8));
     }
   }, [account, coinName]);
-
-  /**
-   *  授权USDT
-   */
+ 
   const handleApprove = useCallback(async () => {
     console.log("account", account);
     if (account) {
@@ -55,10 +49,7 @@ export default function useUSDTGroup(
       }
     }
   }, [showLoding, coinName, account]);
-
-  /**
-   *  TOKENBalance 授权额度
-   */
+ 
   const initTOKENAllowance = useCallback(async () => {
     if (!!account) {
       const allowance = await Contracts.example?.Tokenapprove(
@@ -72,27 +63,18 @@ export default function useUSDTGroup(
       // debugger;
     }
   }, [account, contractAddress, coinName]);
-
-  /**
-   *  TOKENBalance 授权额度
-   */
+ 
   const initSymbol = useCallback(async () => {
     if (!!account) {
       const symbol = await Contracts.example?.symbol(account, coinName);
       setSymbol(symbol);
     }
   }, [account, contractAddress, coinName]);
-
-  /**
-   *  TOKENBalance 授权额度
-   */
+ 
   const handleUSDTRefresh = useCallback(() => {
     setHash(+new Date());
   }, [coinName]);
-
-  /**
-   *  TOKENBalance 授权额度
-   */
+ 
   const handleTransaction = useCallback(
     async (
       price: number | string,

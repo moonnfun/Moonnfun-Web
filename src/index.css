@@ -22,14 +22,14 @@ code {
     monospace;
 }
 
-/* 去除 Chrome、Safari、Edge 的箭头 */
+/*   Chrome、Safari、Edge   */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* 去除 Firefox 的箭头 */
+/*   Firefox   */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -318,52 +318,48 @@ body::-webkit-scrollbar-thumb {
 .detailList::-webkit-scrollbar {
   width: 2px;
 }
-
-/* 全局滚动条样式（适用于所有浏览器） */
+ 
 .advanced_list { 
-  scrollbar-width: thin; /* Firefox 兼容 */
-  scrollbar-color: #ddd transparent; /* Firefox 滚动条颜色（滑块，轨道） */ 
-  border-radius: 24px; /* 滑块圆角 */
+  scrollbar-width: thin;  
+  scrollbar-color: #ddd transparent;  
+  border-radius: 24px;  
 }
-
-/* Webkit 浏览器（Chrome/Edge/Safari）的滚动条样式 */
+ 
 .advanced_list::-webkit-scrollbar {
-  width: 4px; /* 滚动条宽度 */ 
+  width: 4px;  
 }
 
 .advanced_list::-webkit-scrollbar-thumb {
-  background: #ddd !important; /* 滑块颜色 */
-  border-radius: 24px; /* 滑块圆角 */
+  background: #ddd !important;  
+  border-radius: 24px;  
 }
 
 .advanced_list::-webkit-scrollbar-thumb:hover {
-  background: #ddd !important; /* 滑块悬停颜色 */
+  background: #ddd !important;  
 }
 
 .advanced_list::-webkit-scrollbar-track {
-  background: #ddd !important; /* 轨道颜色 */
+  background: #ddd !important;  
 }
-
-/* 滚动条样式（适用于所有浏览器） */
+ 
 .scrollbar_style { 
-  scrollbar-width: thin; /* Firefox 兼容 */
-  scrollbar-color: #ddd transparent; /* Firefox 滚动条颜色（滑块，轨道） */  
+  scrollbar-width: thin; 
+  scrollbar-color: #ddd transparent;  
 }
-
-/* Webkit 浏览器（Chrome/Edge/Safari）的滚动条样式 */
+ 
 .scrollbar_style::-webkit-scrollbar {
-  width: 4px; /* 滚动条宽度 */ 
+  width: 4px;  
 }
 
 .scrollbar_style::-webkit-scrollbar-thumb {
-  background: #ddd !important; /* 滑块颜色 */
-  border-radius: 24px; /* 滑块圆角 */
+  background: #ddd !important;  
+  border-radius: 24px; 
 }
 
 .scrollbar_style::-webkit-scrollbar-thumb:hover {
-  background: #ddd !important; /* 滑块悬停颜色 */
+  background: #ddd !important;  
 }
 
 .scrollbar_style::-webkit-scrollbar-track {
-  background: #ddd !important; /* 轨道颜色 */
+  background: #ddd !important;  
 }

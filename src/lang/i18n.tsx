@@ -7,8 +7,7 @@ export const zh = "zh";
 export const en = "en";
 i18n
   .use(initReactI18next) //init i18next
-  .init({
-    //引入资源文件
+  .init({ 
     resources: {
       zh: {
         translation: zhCnTrans,
@@ -16,8 +15,7 @@ i18n
       en: {
         translation: enUsTrans,
       },
-    },
-    //选择默认语言，选择内容为上述配置中的key，即en/zh
+    }, 
     // fallbackLng: "en",
     fallbackLng: window.localStorage.getItem(LOCAL_KEY) || "en",
     debug: false,

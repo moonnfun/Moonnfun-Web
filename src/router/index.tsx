@@ -25,22 +25,14 @@ export default function Router() {
             <Route path="IDO" element={<IDO />}></Route>
           </Route> */}
 
-          {/* 首页 */}
-          <Route path="" element={<Home />}></Route>
-          {/* 详情 */}
-          <Route path="detail" element={<Detail />}></Route>
-          {/* 好友 */}
-          {/* <Route path="friends" element={<Friends />}></Route> */}
-          {/* 我的 */}
+          <Route path="" element={<Home />}></Route> 
+          <Route path="detail" element={<Detail />}></Route> 
+          {/* <Route path="friends" element={<Friends />}></Route> */} 
           <Route path="account" element={<Account />}></Route>
-          <Route path="account/invite" element={<AccountInvite />}></Route>
-          {/* 排行榜 */}
-          <Route path="ranking" element={<Ranking />}></Route>
-          {/* 高级 */}
-          <Route path="advanced" element={<Advanced />}></Route>
-          {/* 创建币 */}
-          <Route path="createCoin" element={<CreateCoin />}></Route>
-          {/* 支持 */}
+          <Route path="account/invite" element={<AccountInvite />}></Route> 
+          <Route path="ranking" element={<Ranking />}></Route> 
+          <Route path="advanced" element={<Advanced />}></Route> 
+          <Route path="createCoin" element={<CreateCoin />}></Route> 
           <Route path="support" element={<Support />}></Route>
           {/* Bridge */}
           <Route path="bridge" element={<Bridge />}></Route>
